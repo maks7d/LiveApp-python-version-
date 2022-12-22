@@ -25,4 +25,4 @@ serialInst.open()
 while True:
     if serialInst.in_waiting:
         packet = serialInst.readline()
-        print(packet.decode('utf'))
+        print(packet.decode('utf').rstrip('\n'))
