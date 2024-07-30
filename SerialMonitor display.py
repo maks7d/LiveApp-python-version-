@@ -17,7 +17,7 @@ fenetre.config(menu=menu)
 
 chronos_max = []
 chronos_Hugo=[]
-   
+
 def initComPort(index):
     currentPort = str(ports[index])
     comPortVar = str(currentPort.split(' ')[0])
@@ -54,7 +54,7 @@ def checkSerialPort():
         print("avant traitement", dernier_packet)
         dernier_packet = dernier_packet[2 : -5 or None]
         #decode_msg(packet_a_decoder=dernier_packet, debut_chrono=debut_chrono_dans_packet, 
-         #          dataFrame=dataFrame, num_puce=num_puce, debut_type_msg=debut_type_msg)
+        #          dataFrame=dataFrame, num_puce=num_puce, debut_type_msg=debut_type_msg)
         print("apres traitement", dernier_packet)
         return dernier_packet
         
